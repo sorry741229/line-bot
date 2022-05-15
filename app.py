@@ -39,20 +39,28 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '我還沒那麼猛，不要再問了'
+        if msg in 'hi':
+            r == 'hi'
+        elif msg in '飯':
+            r == '我每天都很飽'
+        elif msg in '潔':
+            r == '如果你想活久一點最好說點好話'
+        elif msg in '慈':
+            r == '好，掰掰'
+        elif msg in '承':
+            r == '不要說那麼多，就帥哥'
+        elif msg in '你是誰':
+            r == '帥哥'
+        elif msg in '我是誰':
+            r == '去筊杯阿，我怎麼知道'
+        elif msg in '天氣':
+            r == '我不是Siri'
+        elif msg in '愛你':
+            r == '你常常跟別人這樣說嗎?'
 
-    if msg in 'hi':
-        r == 'hi'
-    elif msg in '飯':
-        r == '我每天都很飽'
-    elif msg in '潔':
-        r == '如果你想活久一點最好說點好話'
-    elif msg in '慈':
-        r == '好，掰掰'
-    elif msg in '承':
-        r == '不要說那麼多，就帥哥'
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=r))
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
