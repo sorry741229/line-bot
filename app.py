@@ -41,7 +41,7 @@ def handle_message(event):
     s = '馬汀張萬歲，我愛馬汀張'
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='s'))
+        TextSendMessage(text=s))
 
 
 if __name__ == "__main__":
