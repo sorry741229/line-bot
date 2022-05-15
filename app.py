@@ -55,7 +55,7 @@ def handle_message(event):
         r = '建議去筊杯，妳覺得我怎麼可能知道?'
     elif msg in ['天氣']:
         r = '我不是Siri'
-    elif msg in ['愛你']:
+    elif msg in '愛你':
         r = '你常常跟別人這樣說嗎?'
     elif msg in '欸':
         r = '安娜?'
