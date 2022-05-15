@@ -41,27 +41,25 @@ def handle_message(event):
     r = '我還沒那麼猛，不要再問了'
     if msg in ['hi', 'HI']:
         r = 'Hi'
-    elif msg in ['飯了嗎']:
+    elif '飯了嗎' in msg :
         r = '我每天都很飽'
-    elif msg in ['潔']:
+    elif '潔' in msg :
         r = '如果你想活久一點最好說點好話'
-    elif msg in ['慈']:
+    elif '慈' in msg :
         r = '好，掰掰'
-    elif msg in ['承']:
-        r = '不要說那麼多，就帥哥'
-    elif msg in '你是誰':
+    elif '你是誰' in msg :
         r = '帥哥機器人'
-    elif msg in '我是誰':
+    elif '我是誰' in msg :
         r = '建議去筊杯，妳覺得我怎麼可能知道?'
-    elif msg in ['天氣']:
-        r = '我不是Siri'
-    elif msg in '愛你':
+    elif '天氣' in msg :
+        r = '我不是Siri姐'
+    elif '愛你' in msg :
         r = '你常常跟別人這樣說嗎?'
-    elif msg in '欸':
+    elif msg == '欸':
         r = '安娜?'
     elif msg in ['你好', '妳好']:
         r = '你好'
-    elif msg in ['允上']:
+    elif '允上' in msg :
         r = '來打架呀'
 
     line_bot_api.reply_message(
